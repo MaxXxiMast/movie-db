@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  div(ng-app='kr-app')
+    .main-container(ng-view='')
+    script(src=domainName+'/lib/angular/angular.js')
+    script(src=domainName+'/node/angulargrid/angulargrid.js')
+    script(src=domainName+'/lib/angular-route/angular-route.js')
+    script(src=domainName+'/lib/angular-sanitize/angular-sanitize.js')
+    script(src=domainName+'/lib/angular-loading-bar/build/loading-bar.js')
+    script(src=domainName+'/scripts/controllers/MainCtrl.js')
+    script(src=domainName+'/scripts/services/MainService.js')
+    script(src=domainName+'/scripts/directives/lazyScroll.js')
+    script(src=domainName+'/scripts/app.js')
+    script(src=domainName+'/scripts/route.js')
+    script.
+      domainName="#{domainName}/"
+      apiUrl="#{apiUrl}"

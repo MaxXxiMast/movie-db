@@ -1,0 +1,11 @@
+<div class="gallery-wrap">
+    <ul class="masonry" lazy-scroll="kr.loadMore()" ng-click="kr.loadMore()">
+         <li ng-repeat="item in kr.data.items" class="grid">
+             <div class="item-card">
+                 <a ng-href="#/details/{{ item.imdbID }}">
+                     <img src="{{ (item.Poster !== 'N/A') ? item.Poster : 'http://moviemarker.co.uk/wp-content/uploads/NoPosterAvailable.jpg' }}" class="grid-img" alt="{{ item.Title }} Poster" />
+                 </a>
+             </div>
+         </li>
+     </ul>
+</div>

@@ -1,0 +1,22 @@
+<div class="details-container">
+    <div class="top-details">
+        <h4 class="title">{{ kr.data.selectedItem.Title }}<span class="year">( {{ kr.data.selectedItem.Year }} )</span></h4>
+        <div class="quick-info">
+            {{ kr.data.selectedItem.Rated }} | {{ kr.data.selectedItem.Runtime }} |  {{ kr.data.selectedItem.Genre }} |  {{ kr.data.selectedItem.Released }}
+        </div>
+    </div>
+
+    <div class="bottom-details">
+        <div class="poster">
+            <img src="{{ kr.data.selectedItem.Poster }}" alt="{{ kr.data.selectedItem.Title }}" ng-cloak />
+        </div>
+        <div class="extra-details">
+            <p class="plot">{{ kr.data.selectedItem.Plot }}</p>
+            <div class="cast-details">
+                <p class="director"><strong>Director: </strong> {{ kr.data.selectedItem.Director }} </p>
+                <p class="writer"><strong>Writers: </strong> {{ kr.data.selectedItem.Writer }} </p>
+                <p class="actor"><strong>Actors: </strong> {{ kr.data.selectedItem.Actors }} </p>
+            </div>
+        </div>
+    </div>
+</div>
